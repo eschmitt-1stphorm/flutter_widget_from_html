@@ -17,6 +17,7 @@ class WebViewState extends State<WebView> {
     // ignore: unsafe_html
     _iframeElement.src = widget.url;
     _iframeElement.style.border = 'none';
+    _iframeElement.allowFullscreen = true;
 
     if (widget.mediaPlaybackAlwaysAllow) {
       _iframeElement.allow = 'autoplay';
