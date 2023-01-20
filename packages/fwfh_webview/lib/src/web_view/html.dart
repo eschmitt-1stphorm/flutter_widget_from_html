@@ -18,22 +18,6 @@ class WebViewState extends State<WebView> {
     _iframeElement.src = widget.url;
     _iframeElement.style.border = 'none';
     _iframeElement.allowFullscreen = true;
-    _iframeElement.onScroll.listen((event) {
-      print('OnScroll Event');
-      print(event);
-    });
-    _iframeElement.onMouseWheel.listen((event) {
-      print('onMouseWheel Event');
-      print(event);
-    });
-    _iframeElement.onDrag.listen((event) {
-      print('OnDrag Event');
-      print(event);
-    });
-    _iframeElement.onClick.listen((event) {
-      print('OnClick Event');
-      print(event);
-    });
 
 
     if (widget.mediaPlaybackAlwaysAllow) {
